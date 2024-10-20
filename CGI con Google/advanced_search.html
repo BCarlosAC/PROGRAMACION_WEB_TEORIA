@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda Avanzada</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="menu">
+        <a href="index.html">Búsqueda Simple</a>
+        <a href="image_search.html">Búsqueda de Imágenes</a>
+        <a href="advanced_search.html">Búsqueda Avanzada</a>
+    </div>
+    <div class="image-container advanced-search-img">
+        <img src="image.png" alt="Imagen Google">
+    </div>
+
+    <div class="advanced-search-box">
+        <form action="/cgi-bin/advanced_search.pl" method="GET">
+            <input type="text" name="as_q" placeholder="Todas estas palabras">
+            <br>
+            <input type="text" name="as_epq" placeholder="Esta palabra o frase exacta">
+            <br>
+            <input type="text" name="as_eq" placeholder="Ninguna de estas palabras">
+            <br>
+            <input type="submit" value="Búsqueda Avanzada">
+        </form>
+    </div>
+</body>
+</html>
